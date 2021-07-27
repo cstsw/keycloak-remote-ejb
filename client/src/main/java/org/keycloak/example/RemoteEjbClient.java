@@ -8,7 +8,6 @@ import java.util.Hashtable;
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
-import org.keycloak.example.ejb.HelloBean;
 import org.keycloak.example.ejb.KeycloakToken;
 import org.keycloak.example.ejb.RemoteHello;
 
@@ -92,7 +91,7 @@ public class RemoteEjbClient {
             // our EJB deployment, so this is an empty string
             final String distinctName = "";
             // The EJB name which by default is the simple class name of the bean implementation class
-            final String beanName = HelloBean.class.getSimpleName();
+            final String beanName = "HelloBean";
             // the remote view fully qualified class name
             final String viewClassName = RemoteHello.class.getName();
             // let's do the lookup
