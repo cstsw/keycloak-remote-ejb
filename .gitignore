@@ -8,6 +8,7 @@
 .project
 .settings
 .classpath
+bin
 
 # NetBeans #
 ############
@@ -49,3 +50,8 @@ target
 # Maven shade
 #############
 *dependency-reduced-pom.xml
+
+
+# Gradle
+########
+.gradle
