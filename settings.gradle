@@ -1,0 +1,5 @@
+rootProject.name = 'keycloak-remote-ejb'
+include 'client'
+project(':client').projectDir = new File('client')
+include 'ejb-module'
+project(':ejb-module').projectDir = new File('ejb-module')

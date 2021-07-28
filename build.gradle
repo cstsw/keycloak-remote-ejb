@@ -1,0 +1,23 @@
+allprojects {
+    apply plugin: 'eclipse'
+}
+
+subprojects {
+
+    apply plugin: 'java'
+
+    repositories{
+        mavenCentral()
+        maven {
+            name "JBoss Public Maven Repository Group"
+            url "https://repository.jboss.org/nexus/content/groups/public-jboss/"
+
+        }
+    }
+
+    dependencies {
+        implementation 'org.keycloak:keycloak-core:14.0.0',
+                       'org.keycloak:keycloak-adapter-core:14.0.0'
+    }
+
+}
