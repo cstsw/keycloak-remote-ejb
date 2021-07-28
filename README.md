@@ -18,7 +18,7 @@ How to have this running
  
 2. Build this project with: 
     ````
-    mvn clean install
+    gradle clean build
     ````
 
 3. Deploy remote ejb to the wildfly server. 
@@ -44,10 +44,9 @@ How to have this running
 
 7. In keycloak admin console, import realm from file `testrealm.json` .
 
-8. Run the client. You can either run class `RemoteEjbClient` from IDE or use maven command like this:
+8. Run the client. You can either run class `RemoteEjbClient` from IDE or use Gradle command like this:
     ````
-cd client
-mvn exec:java -Pclient
+gradle :client:run
     ````
 
 If you login as user `john` with password `password`, you should be able to see that both EJB methods were successfully invoked.
