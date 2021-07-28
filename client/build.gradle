@@ -1,7 +1,8 @@
 dependencies {
     implementation 'org.wildfly:wildfly-ejb-client-bom:17.0.1.Final',
                    'org.picketbox:picketbox:5.0.3.Final',
-                   'org.apache.httpcomponents:httpclient:4.5.13'
+                   'org.apache.httpcomponents:httpclient:4.5.13',
+                   project(':ejb-module')
 }
 
 jar {
