@@ -10,3 +10,8 @@ jar {
         attributes("Main-Class": "org.keycloak.example.RemoteEjbClient")
     }
 }
+
+task run(type: JavaExec) {
+    classpath = sourceSets.main.runtimeClasspath
+    main = 'org.keycloak.example.RemoteEjbClient'
+}
